@@ -26,6 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'mocha'
   gem.add_development_dependency 'bourne'
   gem.add_development_dependency 'fuubar'
+  gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'guard-rspec'
 end
 
