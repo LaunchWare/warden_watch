@@ -17,9 +17,14 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
+  gem.add_dependency 'warden'
+  gem.add_dependency 'railties', '~> 3.0'
+  gem.add_dependency 'activerecord', '~> 3.0'
+
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'mocha'
+  gem.add_development_dependency 'bourne'
   gem.add_development_dependency 'fuubar'
   gem.add_development_dependency 'guard-rspec'
 end
