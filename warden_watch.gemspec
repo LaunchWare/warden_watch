@@ -22,12 +22,14 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'activerecord', '~> 3.0'
 
   gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'rspec-rails'
   gem.add_development_dependency 'mocha'
   gem.add_development_dependency 'bourne'
   gem.add_development_dependency 'fuubar'
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'guard-rspec'
   gem.add_development_dependency 'rails'
+  gem.add_development_dependency 'shoulda'
+  gem.add_development_dependency 'sqlite3'
 end
 

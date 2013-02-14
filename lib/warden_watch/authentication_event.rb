@@ -8,7 +8,7 @@ module WardenWatch
 
     def track!
       if track?
-        @user.track_visit!
+        @user.track_visit!(@auth, @opts)
       end
     end
 

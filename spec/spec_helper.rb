@@ -1,13 +1,14 @@
-require 'warden_watch'
-
-require 'rspec'
-
 require 'mocha/api'
 require 'bourne'
 
 ENV["RAILS_ENV"] = "test"
 
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
+
+require 'rspec/rails'
+require 'shoulda-matchers'
+
+require 'warden_watch'
 
 Rails.backtrace_cleaner.remove_silencers!
 
