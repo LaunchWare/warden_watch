@@ -32,7 +32,8 @@ describe WardenWatch::Model do
 
   def track_visit(user, env, opts)
     user.save!
-    user.track_visit!(env, opts)
+    auth = mock(:env => env)
+    user.track_visit!(auth, opts)
   end
 end
 

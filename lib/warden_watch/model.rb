@@ -10,8 +10,8 @@ module WardenWatch
         :inverse_of => :visitor
     end
 
-    def track_visit!(env, opts)
-      req = Rack::Request.new(env)
+    def track_visit!(auth, opts)
+      req = Rack::Request.new(auth.env)
       visits.create! do |v|
         v.ip_address = req.ip
       end
