@@ -11,3 +11,5 @@ module WardenWatch
   end
 end
 
+WardenWatch::Hook.enable!
+
