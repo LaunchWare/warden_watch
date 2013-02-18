@@ -1,4 +1,4 @@
-# WardenWatch
+# WardenWatch [![Build Status](https://travis-ci.org/LaunchWare/warden_watch.png)](https://travis-ci.org/LaunchWare/warden_watch)
 
 Tracks user logins with warden
 
